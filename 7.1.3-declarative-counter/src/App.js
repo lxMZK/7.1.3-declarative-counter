@@ -7,6 +7,7 @@ function App() {
     <div>
       <h1>{counter}</h1>
       <button onClick={()=>{changeCounter(counter+1)}}>+</button>
+      <button onClick={()=>{changeCounter(counter-1)}}>-</button>
     </div>
   )
 }
