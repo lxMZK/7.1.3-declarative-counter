@@ -4,12 +4,14 @@ function App() {
   let [counter, changeCounter] = useState(1)
   window.changeCounter = changeCounter
   return (
-    <div>
+    <main>
       <h1>{counter}</h1>
-      <button onClick={()=>{changeCounter(counter+1)}}>+</button>
-      <button onClick={()=>{changeCounter(counter-1)}}>-</button>
-      <button id='change' onClick={()=>{changeCounter(Number(prompt("Input Value:")))}}>Change Value</button>
-    </div>
+      <div>
+        <button onClick={() => { changeCounter(counter + 1) }}>+</button>
+        <button onClick={() => { changeCounter(counter - 1) }}>-</button>
+        <button id='change' onClick={() => { changeCounter(Number(prompt("Input Value:", counter))) }}>Change Value</button>
+      </div>
+    </main>
   )
 }
 
