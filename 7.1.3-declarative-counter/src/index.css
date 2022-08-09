@@ -24,6 +24,11 @@ button {
   margin: 2px;
 }
 
+#change{
+  width: 204px;
+  margin: 0 15% 0 15%;
+}
+
 div {
   display: flex;
   flex-wrap: wrap;

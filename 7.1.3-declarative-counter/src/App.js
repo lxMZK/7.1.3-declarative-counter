@@ -8,6 +8,7 @@ function App() {
       <h1>{counter}</h1>
       <button onClick={()=>{changeCounter(counter+1)}}>+</button>
       <button onClick={()=>{changeCounter(counter-1)}}>-</button>
+      <button id='change' onClick={()=>{changeCounter(Number(prompt("Input Value:")))}}>Change Value</button>
     </div>
   )
 }
